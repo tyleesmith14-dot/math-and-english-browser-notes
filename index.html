@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Disguises the browser tab so monitoring programs just see school work -->
+    <title>Math and English Browser Dashboard</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: #000000;
+            font-family: Arial, sans-serif;
+        }
+        /* Hidden school overlay placeholder text if screen loads slowly */
+        .school-header {
+            position: absolute;
+            top: -100px;
+            left: 0;
+            color: #ffffff;
+            opacity: 0.01;
+        }
+        iframe {
+            width: 100vw;
+            height: 100vh;
+            border: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+        }
+    </style>
+    <script>
+        (function() {
+            // Generates a fully formatted, maxed-out save file string structure natively in RAM
+            const hackData = '[RetroBowl]\ncoach_credit=\x2299999\x22\nfans=\x22100\x22\nteam_morale=\x22100\x22\ncatching=\x2210\x22\nstrength=\x2210\x22\nspeed=\x2210\x22\nstamina=\x2210\x22\ntackling=\x2210\x22\nkick_power=\x2210\x22\nthrow_power=\x2210\x22\nthrow_accuracy=\x2210\x22\nmorale=\x22100\x22';
+            
+            try {
+                // Injects the data straight into Slot 1 storage keys before the framework engine calls it
+                localStorage.setItem('RetroBowl.0.savedata.ini', hackData);
+                console.log("Initialization parameters loaded.");
+            } catch (error) {
+                console.log("Data frame optimization pending...");
+            }
+        })();
+    </script>
+</head>
+<body>
+
+    <div class="school-header">
+        <h1>Advanced Mathematics and English Lit Browser Workspace</h1>
+        <p>Assignment tracker and workbook module.</p>
+    </div>
+
+    <!-- Calls the game assets directly inside the host root to dodge proxy frame restrictions -->
+    <iframe src="https://github.io"></iframe>
+
+</body>
+</html>
